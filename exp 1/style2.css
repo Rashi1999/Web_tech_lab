@@ -1,0 +1,117 @@
+h1, h2{
+  font-family: 'Roboto Slab', serif;
+}
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header{
+  background-color: #444;
+} */
+header, footer{
+  color: #333;
+  margin: 0;
+  padding: 1em 1em;
+  height: 9.2vh;
+  text-align: center;
+}
+h1{
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+h2{
+  margin: 0;
+  padding-top: 13px;
+  font-size: 3em;
+  font-family: 'Roboto Slab', serif;
+}
+footer p{
+  padding-top: 10px;
+}
+img{
+  height: 450px;
+  width: 450px;
+}
+
+.container{
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+  padding: 3rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 29em;
+  perspective: 1000px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #e7e7e7;
+  color: #444;
+  transform: rotateY(180deg);
+}
+
+.black{
+  background: black;
+  color: white;
+  margin: 0 0;
+}
+
+button {
+  background-color: #666;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ul{
+  padding-left: 18rem;
+  list-style: none;
+  text-align: left;
+}
