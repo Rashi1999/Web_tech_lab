@@ -3,6 +3,7 @@ var n2=document.getElementById("num2");
 var n3=document.getElementById("num3");
 var add=document.getElementById("ans");
 var add_btn=document.getElementById("add");
+var sub_btn=document.getElementById("sub");
 var mul_btn=document.getElementById("table");
 var clr_add_btn=document.getElementById("reset_add");
 var clr_mult_btn=document.getElementById("reset_mul");
@@ -10,6 +11,10 @@ var tabledet=document.querySelector("ul");
 
 function sum(){
   add.value=parseInt(n1.value)+parseInt(n2.value);
+}
+
+function subtract(){
+  add.value=parseInt(n1.value)-parseInt(n2.value);
 }
 
 function clear1() {
@@ -38,6 +43,7 @@ function clear2() {
 }
 
 add_btn.addEventListener("click",sum);
+sub_btn.addEventListener("click",subtract);
 clr_add_btn.addEventListener("click",clear1);
 mul_btn.addEventListener("click",cal_table);
 clr_mult_btn.addEventListener("click",clear2);
