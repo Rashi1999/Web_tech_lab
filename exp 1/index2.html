@@ -29,15 +29,16 @@
             <div class="flip-card-back">
               <br>
               <h1>Addition</h1>
-              <p>First Number  :  </p><input type="text" id="num1">
+              <p>First Number  :  </p><input type="number" id="num1" step="1">
               <br>
-              <p>Second Number :  </p><input type="text" id="num2">
+              <p>Second Number :  </p><input type="number" id="num2" step="1">
               <br>
               <br>
               <button type="button" id="add">Add</button>
+              <button type="button" id="sub">Subtract</button>
               <button type="button" id="reset_add">Reset</button>
               <br>
-              <p>Answer :  </p><input type="text" id="ans">
+              <p>Answer :  </p><input type="text" id="ans" disabled>
             </div>
           </div>
         </div>
@@ -51,7 +52,7 @@
             <div class="flip-card-back">
               <br>
               <h1>Multiplication Table</h1>
-              <p>Enter a Number  :  <input type="text" id="num3"></p>
+              <p>Enter a Number  :  <input type="number" id="num3" step="1"></p>
               <button type="button" id="table">Find Table</button>
               <button type="button" id="reset_mul">Reset</button>
               <br>
