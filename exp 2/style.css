@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin: 0;
+    background: linear-gradient(135deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#asterisk{
+    color: red;
+}
+label{
+    padding-bottom: 1em;
+}
+
+p{
+    padding-top: 1em;
+    color: red;
+    line-height: 1em;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+
+.submit{
+    background-color:#04AA6D;
+    color: black;
+}
+input[type=reset]{
+    background-color: rgb(190, 82, 63);
+    color: black;
+}
+
+.container{
+    width: 80%;
+    align-content: center;
+    background-color: rgb(224, 224, 224);
+    justify-content: center;
+    padding-left: 3rem;
+    padding-top: 1em;
+    padding-bottom: 2rem;
+    box-shadow: 10px 20px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 2vh;
+}
+
+.buffer{
+    padding-top: 2rem;
+}
+
+
+.btn {
+    width: 20%;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    opacity: 0.76;
+  }
+
+ .btn:hover{
+    opacity: 1;
+    color: whitesmoke;
+  }
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    color: #000;
+    position: relative;
+  }
+
+  /* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    right: 10px;
+    content: "✓";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    right: 10px;
+    content: "✖";
+  }
+
+  input[type=checkbox]{
+    transform: scale(1.2);
+    margin-right: 0.9rem;
+  }
