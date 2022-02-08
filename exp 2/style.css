@@ -106,3 +106,13 @@ input[type=reset]{
     transform: scale(1.2);
     margin-right: 0.9rem;
   }
+
+  footer{
+    padding-top: 2em;
+    color: #333;
+    margin: 0;
+    padding: 1em 1em;
+    height: 9.2vh;
+    text-align: center;
+    font-size: small;
+  }
