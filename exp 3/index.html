@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <!-- My style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Assistant</title>
+  </head>
+
+  <body>
+    <!-- The sidebar -->
+    <div class="sidebar">
+      <!-- <div class="buffer"></div> -->
+      <!-- <img src="ass.svg" alt="" width="200px"> -->
+
+      <!-- <h1>Personal Assistant</h1> -->
+      <a href="#todo">To Do List</a>
+      <a href="#expensetrack">Expense Tacker</a>
+      <a href="#periods">Menstrual Tracker</a>
+      
+    </div>
+
+    <!-- Landing Content -->
+    <div class="content">
+      <div class="container remove">
+        
+        <div class="row">
+          <div class="col-lg-12 hd">
+            <h2>Welcome, I am your Personal Assistant !</h2>
+          </div>
+          <div class="buffer"></div>
+          <img src="assests/ass.svg" alt="" width="450" height="450">
+        </div>
+        </div>
+    </div>
+
+
+
+   <!-- To Do List -->
+   <div class="content" id="todo">
+    <div class="container">
+      
+      <form class="row">
+        <div class="col-lg-12 hd">
+          <h2>To Do List</h2>
+        </div>
+          <div class="col-lg-10 buffer">
+            
+            <input type="text" name="" id="item" placeholder="Task Description" style="width: 100%;">
+          </div>
+          <div class="col-lg-2 buffer">
+            <!-- <label for=""></label>
+            <div class="buffer"></div> -->
+            <button id="add_list_item" type="button" class="submit btn btn2">Enter</button>
+          </div>
+          <div class="col-lg-12 buffer">
+            <table id="shop_list"></table>
+          </div>
+        </form>
+      </div>
+  </div>
+
+     <!-- Expense Tracker -->
+     <div class="content" id="expensetrack">
+      <div class="container">
+        
+        <form class="row">
+          <div class="col-lg-12 hd">
+            <h2>Expense Tracker</h2>
+          </div>
+            <div class="col-lg-2 buffer">
+              <label for="type">Type</label>
+              <br>
+              <select name="" id="type" style="width: 100%;">
+                <option value="Income" >Income</option>
+                <option value="Expense">Expense</option>
+              </select>
+            </div>
+            <div class="col-lg-4 buffer">
+              <label for="amount_desc">Description</label>
+              <br>
+              <input type="text" name="" id="amount_desc" style="width: 100%;">
+            </div>
+            <div class="col-lg-3 buffer">
+              <label for="amount">Amount</label>
+              <br>
+              <input type="number" id="amount" placeholder="₹">
+            </div>
+            <div class="col-lg-3 buffer">
+              <div class="buffer"></div>
+              <button id="add_expense" type="button" class="submit btn btn2">Add</button>
+              <!-- <input type="reset" id="reset_exp" class="submit "> -->
+              <input type="reset" id="reset_exp" class="btn btn2">
+            </div>
+            
+            <div class="col-lg-6 buffer" id="contain_canvas">
+              <canvas id="myChart"></canvas>
+              <!-- <table id="exp_tab"></table> -->
+            </div>
+            <div class="col-lg-6 buffer">
+              <!-- <canvas id="myChart"></canvas> -->
+              <table id="exp_tab"></table>
+            </div>
+          </form>
+        </div>
+    </div>
+    
+
+  <!-- Menstrual Tracker -->
+  <div class="content" id="periods">
+    <div class="container">
+      
+      <form class="row">
+        <div class="col-lg-12 hd">
+          <h2>Menstrual Tracker</h2>
+        </div>
+          <div class="col-lg-6 buffer">
+            <label for="period_start_date">Start Date</label>
+            <br>
+            <input type="date" name="" id="period_start_date">
+          </div>
+          <div class="col-lg-6 buffer">
+            <label for="period_cycle">Cycle Duration</label>
+            <br>
+            <input type="number" id="period_cycle" min="15" max="60" placeholder="No. of days">
+          </div>
+          <div class="col-lg-12 buffer">
+            <button id="period_submit" type="button" class="submit  btn">Track</button>
+            <input type="reset" id="reset" class="btn">
+          </div>
+          <div class="col-lg-12 buffer">
+            <h3 id="next_cycle"></h3>
+          </div>
+        </form>
+      </div>
+  </div>
+  
+  
+  
+    
+    <!-- JS Scrpits -->
+
+    <script src="script.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+<script>
+  
+</script>
+  </body>
+</html>

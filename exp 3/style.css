@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    margin: 0;
+    background-color: #AA979E;
+    /* background: linear-gradient(135deg, #726193 20%, #e37b7c 60%, #ffe4b4); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size:100% 100%;
+  }
+  
+  .sidebar {
+    margin: 0;
+    width: 200px;
+    background-color: #322A2D;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-decoration: none;
+    font-size: large;
+  }
+   
+  .sidebar a.active {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+/* Table Style */
+table,td{
+    padding: 1em;
+}
+
+/* Span for dustbin icon */
+span:hover{
+    cursor: pointer;
+}
+
+.container{
+    width: 80%;
+    align-content: center;
+    background-color: rgb(224, 224, 224);
+    justify-content: center;
+    /* padding-left: 3rem;
+    padding-top: 1em; */
+    padding-bottom: 2rem;
+    box-shadow: 10px 20px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 2vh;
+}
+.remove{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.hd{
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+    background-color: #322A2D;
+    color: #ccc;
+}
+input[type=text], input[type=date], input[type=number], select {
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  label{
+    padding-bottom: 1em;
+}
+
+.btn {
+    width: 20%;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    opacity: 0.76;
+  }
+
+  .btn2 {
+    width: auto;
+    align-items: stretch;
+  }
+
+ .btn:hover{
+    opacity: 1;
+    color: whitesmoke;
+  }
+
+.submit{
+    background-color:#04AA6D;
+    color: black;
+}
+input[type=reset]{
+    background-color: rgb(190, 82, 63);
+    color: black;
+}
+
+.buffer{
+    padding-top: 2rem;
+    padding-left: 2rem;;
+}
