@@ -9,3 +9,7 @@
 - Form program that collects the first name, last name, email, user id, and password and confirms password from the user. All the inputs are mandatory and the email address entered should be in the correct format. Also, the values entered in the password and confirm password text boxes should be the same. After validating
 using JavaScript, in output display proper error messages in red color just next to the textbox where there is an error.
 - https://htmlpreview.github.io/?https://github.com/Rashi1999/Web_tech_lab/blob/master/exp%202/index.html
+
+## 2. Experiment 3
+- Personal Assistant - A responsive website using HTML,CSS and Javascript.
+- https://htmlpreview.github.io/?https://github.com/Rashi1999/Web_tech_lab/blob/master/exp%203/index.html#expensetrack
