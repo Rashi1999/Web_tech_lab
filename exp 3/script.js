@@ -3,6 +3,7 @@ var list_btn=document.getElementById("add_list_item");
 var money_btn=document.getElementById("add_expense");
 var reset_per_btn=document.getElementById("reset");
 var reset_exp_btn=document.getElementById("reset_exp");
+var reset_todo_btn=document.getElementById("reset_todo");
 // var list=document.querySelectorAll("ul")[0];
 // var expense=document.querySelectorAll("ul")[1];
 var amt_type=document.querySelector("select");
@@ -100,6 +101,9 @@ function trackMoney(){
 function clear_period(){
   document.getElementById('next_cycle').innerHTML=' ';
 }
+function clear_todo(){
+  document.getElementById('shop_list').innerHTML=' ';
+}
 
 function clear_expense(){
   document.getElementById('exp_tab').innerHTML='';
@@ -121,3 +125,4 @@ list_btn.addEventListener("click",addItemInList);
 money_btn.addEventListener("click",trackMoney);
 reset_per_btn.addEventListener("click",clear_period);
 reset_exp_btn.addEventListener("click",clear_expense);
+reset_todo_btn.addEventListener("click",clear_todo);
