@@ -1,0 +1,120 @@
+<!-- <p>detail works! {{ recId }}</p> -->
+<br>
+<br>
+<h2>Ingredients</h2> 
+<br>
+<ng-container [ngSwitch]="true">
+    <div *ngSwitchCase="rid==1">
+        <h4>{{ items[rid-1].rec_name }}</h4> 
+        <br>
+        <div class="card">
+        <table class="table table-striped"> 
+            <thead> 
+                <tr> 
+                    <th>S.No.</th>
+                    <th>Ingredient Name</th> 
+                    <th>Quantity</th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr *ngFor="let r of pizza_ingredient;let index = index;"> 
+                <td>{{ index+1 }}</td> 
+                <td>{{ r.name }}</td> 
+                <td>{{ r.quan }}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div *ngSwitchCase="rid==2">
+        <h4>{{ items[rid-1].rec_name }}</h4> 
+        <br>
+        <div class="card">
+        <table class="table table-striped"> 
+            <thead> 
+                <tr> 
+                    <th>S.No.</th>
+                    <th>Ingredient Name</th> 
+                    <th>Quantity</th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr *ngFor="let r of pasta_ingredient;let index = index;"> 
+                <td>{{ index+1 }}</td> 
+                <td>{{ r.name }}</td> 
+                <td>{{ r.quan }}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div *ngSwitchCase="rid==3">
+        <h4>{{ items[rid-1].rec_name }}</h4> 
+        <br>
+        <div class="card">
+        <table class="table table-striped"> 
+            <thead> 
+                <tr> 
+                    <th>S.No.</th>
+                    <th>Ingredient Name</th> 
+                    <th>Quantity</th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr *ngFor="let r of pancake_ingredient;let index = index;"> 
+                <td>{{ index+1 }}</td> 
+                <td>{{ r.name }}</td> 
+                <td>{{ r.quan }}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div *ngSwitchCase="rid==4">
+        <h4>{{ items[rid-1].rec_name }}</h4> 
+        <br>
+        <div class="card">
+        <table class="table table-striped"> 
+            <thead> 
+                <tr> 
+                    <th>S.No.</th>
+                    <th>Ingredient Name</th> 
+                    <th>Quantity</th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr *ngFor="let r of paneer_ingredient;let index = index;"> 
+                <td>{{ index+1 }}</td> 
+                <td>{{ r.name }}</td> 
+                <td>{{ r.quan }}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div *ngSwitchCase="rid==5">
+        <h4>{{ items[rid-1].rec_name }}</h4> 
+        <br>
+        <div class="card">
+        <table class="table table-striped"> 
+            <thead> 
+                <tr> 
+                    <th>S.No.</th>
+                    <th>Ingredient Name</th> 
+                    <th>Quantity</th>
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr *ngFor="let r of burger_ingredient;let index = index;"> 
+                <td>{{ index+1 }}</td> 
+                <td>{{ r.name }}</td> 
+                <td>{{ r.quan }}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div *ngSwitchDefault>Wrong Choice</div>
+</ng-container>
+<br>
+<br>

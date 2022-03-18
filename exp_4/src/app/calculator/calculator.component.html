@@ -1,0 +1,34 @@
+<header>
+    <h2>Calculator via Angular</h2>
+  </header>
+  <section>
+    <div class="container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/illus.jpg" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <br>
+            <p>First Number  :  </p><input [(ngModel)]='n1' type="number" placeholder="Enter number 1">
+            <br>
+            <br>
+            <p>Second Number :  </p><input [(ngModel)]='n2' type="number" placeholder="Enter number 2">
+            <br>
+            <br>
+            <button (click)="add(n1,n2)">Add</button>
+            <button (click)="subtract()">Subtract</button>
+            <button (click)="multiply()">Multiply</button>
+            <button (click)="divide()">Divide</button>
+            <button (click)="clear()">Clear</button>
+            <br>
+            <br>
+            <h5>Result : {{ result }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Designed by ©Rashi Khandelwal</p>
+  </footer>

@@ -1,0 +1,58 @@
+<!-- <input input [(ngModel)]='item' type="text" name="item" placeholder="Enter Item">
+
+<input input [(ngModel)]='quan' type="number" name="quan" placeholder="Enter Quantity">
+
+<button (click)="addToList()">Add Item</button>
+
+<h5>{{ items }}</h5>
+
+<ul>
+  <li *ngFor="let item of items">
+      <span> {{ item }} </span>
+  </li>
+</ul> 
+
+
+<div *ngFor="let x of items;let index = index;">
+  {{x}}
+  <input (click)="deleteTask(index)" type="button" value="Delete">       
+</div>
+<div>Total : {{ total }}</div> -->
+
+<!-- *ngFor directive is used to repeat a portion of HTML template once per each item from an iterable list (Collection) -->
+
+
+<header>
+  <h2>Shopping List via Angular</h2>
+</header>
+<section>
+  <div class="container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/illus.png" alt="Avatar" >
+        </div>
+        <div class="flip-card-back">
+          <br>
+          Item  :  <input input [(ngModel)]='item' type="text" name="item" placeholder="Enter Item" required>
+          
+          Quantity :  <input input [(ngModel)]='quan' type="number" name="quan" placeholder="Enter Quantity" required>
+          
+          <button (click)="addToList()">Add Item</button>
+          
+          <h5>{{ items }}</h5>
+          <div *ngFor="let x of items;let index = index;">
+            {{x}}
+            <button (click)="deleteTask(index)" type="button" value="Delete" class="btn"><i style="font-size:24px" class="fa">&#xf014;</i></button>
+            <br>
+            <br>
+          </div>
+          <div>Total No. of Items : {{ total }}</div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>Designed by ©Rashi Khandelwal</p>
+</footer>

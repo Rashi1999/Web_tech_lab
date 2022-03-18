@@ -1,0 +1,39 @@
+<br>
+<br>
+<h2>Shopping List</h2> 
+<br>
+<br>
+
+Item  :  <input input [(ngModel)]='item' type="text" name="item" placeholder="Enter Item" required>     
+Quantity :  <input input [(ngModel)]='quan' type="number" name="quan" placeholder="Enter Quantity" required>
+
+<button (click)="addToList()">Add Item</button>
+<br>
+<br>
+<br>
+<div class="card">
+<table class="table table-striped"> 
+  <thead> 
+     <tr> 
+        <th>S.No.</th>
+        <th>Item Name</th> 
+        <th>Quantity</th>
+        <th>Remove</th>
+     </tr> 
+  </thead> 
+  <tbody> 
+     <tr *ngFor="let x of items;let index = index;"> 
+        <td>{{ index+1 }}</td>
+        <td>{{ x }}</td> 
+        <td>{{ quantity[index] }}</td> 
+        <td><i style="font-size:24px" class="fa trash" (click)="deleteTask(index)">&#xf014;</i></td>
+     </tr> 
+     <tr>
+      <td></td>
+      <th>Total Quantity</th>
+      <th>{{ total }}</th>
+      <th></th>
+     </tr>
+  </tbody> 
+</table>
+</div>

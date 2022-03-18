@@ -4,6 +4,7 @@ var money_btn=document.getElementById("add_expense");
 var reset_per_btn=document.getElementById("reset");
 var reset_exp_btn=document.getElementById("reset_exp");
 var reset_todo_btn=document.getElementById("reset_todo");
+// Alternate Method
 // var list=document.querySelectorAll("ul")[0];
 // var expense=document.querySelectorAll("ul")[1];
 var amt_type=document.querySelector("select");
@@ -67,7 +68,7 @@ function trackMoney(){
     var item=document.getElementById("amount_desc");
     var amt=document.getElementById("amount");
     if(item.value.length !=0 && amt.value.length!=0){
-        if(amt_type.value=="expense"){
+        if(amt_type.value=="Expense"){
           exp+=parseInt(amt.value);
           inc-=parseInt(amt.value);
         }else{
@@ -101,17 +102,13 @@ function trackMoney(){
 function clear_period(){
   document.getElementById('next_cycle').innerHTML=' ';
 }
+
 function clear_todo(){
   document.getElementById('shop_list').innerHTML=' ';
 }
 
 function clear_expense(){
   document.getElementById('exp_tab').innerHTML='';
-  // document.getElementById('myChart').innerHTML='&nbsp;'; 
-  // document.getElementById("myChart").destroy();
-  // document.getElementById("myChart").innerHTML = '<canvas id="myChart"></canvas>';
-// var ctx = document.getElementById("myChart").getContext("2d");
-  // document.getElementById('myChart').destroy(); 
   var parent = document.getElementById('contain_canvas');
   var child = document.getElementById('myChart');  
   parent.removeChild(child);            
