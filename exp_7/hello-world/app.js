@@ -10,5 +10,5 @@ app.listen(port,()=> {
 
 //create api
 app.get('/hello_world', (req,res)=>{
-    res.send('<h3>Hello World</h3>');
+    res.send('<h1 style="color:green;">Hello World !!</h1>');
 })

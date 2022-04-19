@@ -1,0 +1,16 @@
+{
+  "name": "exp_10",
+  "version": "1.0.0",
+  "description": "Realtime chat application with multiple rooms and users",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.2",
+    "socket.io": "^4.4.1"
+  }
+}

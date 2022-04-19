@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Default Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let us of readData">
+                <td>{{  us._id }}</td>
+                <td>{{  us.name }}</td>
+                <td>{{  us.department }}</td>
+                <td>
+                    <a class="btn btn-sm btn-danger" [routerLink]="['/create', us._id]">Update</a>
+                    &nbsp;
+                    <button (click)="deleteId(us._id)" class="btn btn-sm btn-success">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
