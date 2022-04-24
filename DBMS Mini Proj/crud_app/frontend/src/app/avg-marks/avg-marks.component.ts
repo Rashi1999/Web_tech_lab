@@ -8,7 +8,7 @@ import { ApiServiceService } from '../apiservice.service';
 })
 export class AvgMarksComponent implements OnInit {
 
-  readData:any;
+  readMarksData:any;
 
   constructor(private service:ApiServiceService) {
     this.getAllProcessData();
@@ -17,7 +17,7 @@ export class AvgMarksComponent implements OnInit {
    getAllProcessData(){
     this.service.getAllData().subscribe((res)=>{
       console.log(res,"res==>>");
-      this.readData=res.data;
+      this.readMarksData=res.data;
     });
   }
 
