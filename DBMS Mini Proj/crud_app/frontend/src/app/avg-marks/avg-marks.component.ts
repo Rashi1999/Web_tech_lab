@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServiceService } from '../apiservice.service';
 
 @Component({
   selector: 'app-avg-marks',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvgMarksComponent implements OnInit {
 
-  constructor() { }
+  readData:any;
+
+  constructor(private service:ApiServiceService) {
+    this.getAllProcessData();
+   }
+
+   getAllProcessData(){
+    this.service.getAllData().subscribe((res)=>{
+      console.log(res,"res==>>");
+      this.readData=res.data;
+    });
+  }
+
 
   ngOnInit(): void {
   }

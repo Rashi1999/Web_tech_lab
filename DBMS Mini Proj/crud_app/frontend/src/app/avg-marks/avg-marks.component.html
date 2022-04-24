@@ -1,1 +1,25 @@
 <p>avg-marks works!</p>
+
+<div class="container mt-5">
+
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Default Id</th>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Mobile</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let us of readData">
+                <td>{{  us.id }}</td>
+                <td>{{  us.fullname }}</td>
+                <td>{{  us.marks }}</td>
+                <td>{{  us.mobile }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

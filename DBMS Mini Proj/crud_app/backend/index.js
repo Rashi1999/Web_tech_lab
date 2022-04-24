@@ -130,14 +130,14 @@ app.delete('/user/:id', (req, res)=>{
 // View Average Marks
 // Avg marks updated thorugh trigger - upon insert, update and delete in user table.
 app.get('/avg-marks', (req, res)=>{
-    let qr=`select * from user`;
+    let qr="select VALUE from marks_analytics WHERE PROCESS = " + "'" + 'AVG_MARKS' + "'";
 
     db.query(qr, (err, result)=>{
         if(err)
             console.log(err,'Error');
         if(result.length>0){
             res.send({
-                message: "All users data",
+                message: "Average Marks",
                 data:result
             });
         }

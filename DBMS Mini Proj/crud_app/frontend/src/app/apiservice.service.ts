@@ -7,12 +7,17 @@ import { Observable } from 'rxjs';
 })
 export class ApiServiceService {
   apiURL='http://localhost:3000/user';
+  api_marks_URL='http://localhost:3000/avg-marks';
   
 
   constructor(private _http:HttpClient) {}
 
   getAllData():Observable<any>{
     return this._http.get(`${this.apiURL}`);
+  }
+
+  getAllProcessData():Observable<any>{
+    return this._http.get(`${this.api_marks_URL}`);
   }
 
   getSingleData(id:any):Observable<any>{
