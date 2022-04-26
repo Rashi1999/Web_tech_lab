@@ -28,9 +28,9 @@
                 <td>{{  us.marks }}</td>
                 <td>{{  us.mobile }}</td>
                 <td>
-                    <a class="btn btn-sm btn-danger" [routerLink]="['/create', us.id]">Update</a>
+                    <a class="btn btn-sm btn-success" [routerLink]="['/create', us.id]">Update</a>
                     &nbsp;
-                    <button (click)="deleteId(us.id)" class="btn btn-sm btn-success">Delete</button>
+                    <button (click)="deleteId(us.id)" class="btn btn-sm btn-danger">Delete</button>
                 </td>
             </tr>
         </tbody>

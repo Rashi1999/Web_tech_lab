@@ -15,7 +15,7 @@ export class AvgMarksComponent implements OnInit {
    }
 
    getAllProcessData(){
-    this.service.getAllData().subscribe((res)=>{
+    this.service.getAllProcessData().subscribe((res)=>{
       console.log(res,"res==>>");
       this.readMarksData=res.data;
     });
