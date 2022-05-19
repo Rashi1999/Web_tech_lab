@@ -9,12 +9,16 @@ import { CreateComponent } from './create/create.component';
 import { ApiServiceService } from './apiservice.service';
 import { HttpClientModule }from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AvgMarksComponent } from './avg-marks/avg-marks.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReadComponent,
-    CreateComponent
+    CreateComponent,
+    AvgMarksComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
