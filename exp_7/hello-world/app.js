@@ -6,9 +6,9 @@ const app = express();
 const port = 8000;
 app.listen(port,()=> {
     console.log('listen port 8000');
-})
+});
 
 //create api
 app.get('/hello_world', (req,res)=>{
     res.send('<h1 style="color:green;">Hello World !!</h1>');
-})
+});

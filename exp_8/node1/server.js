@@ -1,7 +1,6 @@
 //Require module
 var bodyParser = require('body-parser');
 var express = require('express');
-bodyParser=require('body-parser');
 
 // Express Initialize
 var app = express();

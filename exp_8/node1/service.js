@@ -30,7 +30,6 @@ function addition(req,res){
         return;
     }
     var sum=parseInt(n1)+parseInt(n2);
-    // res.send("Greeting to <span style='color:blue;font-size:20px'>"+result.value.userName+" </span>from the sever !");
     res.send("<br><span style='color:green;font-size:100px;'>"+n1+"</span>"
     +"<span style='color:blue;font-size:100px'> + </span>"
     +"<span style='color:green;font-size:100px'>"+n2+"</span>"
@@ -39,8 +38,8 @@ function addition(req,res){
 }
 
 var attachService=function(app){
-    app.get('/svc/greeting',greeting);
-    app.post('/svc/addition',addition)
+    app.get('/greeting',greeting);
+    app.post('/addition',addition)
 };
 
 exports.attachService=attachService;

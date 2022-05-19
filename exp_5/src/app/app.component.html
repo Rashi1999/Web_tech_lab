@@ -40,7 +40,7 @@
           
           <button (click)="addToList()">Add Item</button>
           
-          <h5>{{ items }}</h5>
+          <!-- <h5>{{ items }}</h5> -->
           <div *ngFor="let x of items;let index = index;">
             {{x}}
             <button (click)="deleteTask(index)" type="button" value="Delete" class="btn"><i style="font-size:24px" class="fa">&#xf014;</i></button>

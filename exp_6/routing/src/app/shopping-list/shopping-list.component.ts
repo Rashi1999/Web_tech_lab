@@ -20,7 +20,6 @@ export class ShoppingListComponent{
         alert("Please add Quantity !");
       }
       else {
-          let temp=this.item.padEnd(50,'_')+"   "+this.quan;
           // push() method appends the given element(s) in the last of the array and returns the length of the new array.
           this.items.push(this.item);
           this.quantity.push(this.quan);

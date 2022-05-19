@@ -16,19 +16,19 @@ export class CalculatorComponent{
         this.result=x+y;
   }
   subtract(){
-    if(this.n1==undefined || this.n1==undefined)
+    if(this.n1==undefined || this.n2==undefined)
         this.result="Please enter both the numbers";
     else
         this.result=this.n1-this.n2;
   }
   multiply(){
-    if(this.n1==undefined || this.n1==undefined)
+    if(this.n1==undefined || this.n2==undefined)
         this.result="Please enter both the numbers";
     else
         this.result=(this.n1*this.n2).toFixed(3);
   }
   divide(){
-    if(this.n1==undefined || this.n1==undefined)
+    if(this.n1==undefined || this.n2==undefined)
         this.result="Please enter both the numbers";
     else
         this.result=(this.n1/this.n2).toFixed(3);

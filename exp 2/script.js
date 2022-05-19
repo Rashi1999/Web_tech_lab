@@ -33,12 +33,14 @@ function validations(){
     if(fname.value.length==0)
         val_fname.appendChild(document.createTextNode("! Empty field not allowed"));
     else{
-        for( var i of fname.value)
-        if(!((i>='a' && i<='z') || (i>='A' && i<='Z'))){
+        for( var i of fname.value){
+          if(!((i>='a' && i<='z') || (i>='A' && i<='Z'))){
             temp=document.createTextNode("! Only alphabets are allowed");
             val_fname.appendChild(temp);
             break;
+          }
         }
+        
     }
 
     // Middle Name Validations

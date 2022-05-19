@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 var Student = require('../models/dataSchema');
 
-router.post('/create',(req,res,next) =>{
+router.post('/create',(req,res) =>{
     var newStudent=new Student({
         name:req.body.name,
         department:req.body.department
@@ -35,8 +35,8 @@ router.get('/read/:id',(req,res) =>{
 
 router.put('/update',(req,res) =>{
     Student.findById(req.body._id, (err,stud)=>{
-        if(err)
-            res.status(500).json({errmsg:err});
+            if(err)
+                res.status(500).json({errmsg:err});
             stud.name=req.body.name;
             stud.department=req.body.department;
             stud.save((err,stud)=>{
@@ -51,9 +51,9 @@ router.put('/update/:id',(req,res) =>{
     Student.findById({_id:req.params.id}, (err,stud)=>{
         if(err)
             res.status(500).json({errmsg:err});
-            stud.name=req.body.name;
-            stud.department=req.body.department;
-            stud.save((err,stud)=>{
+        stud.name=req.body.name;
+        stud.department=req.body.department;
+        stud.save((err,stud)=>{
             if(err)
                 res.status(500).json({errmsg:err});
             res.status(200).json({msg:stud});
